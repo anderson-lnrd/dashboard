@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+aside{
+    background-color: #FAFAFA;
+    width: 25%;
+    position: absolute;
+    height: 100%;
+    color: rgb(80, 80, 80);
+    padding: 20px;
+}
+
+aside h4 {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+aside .logo img{
+    width: 50%;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside ul li{
+    padding: 20px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+aside ul li.active{
+    background-color: #232323;
+    color: white;
+}
+.icon-gradient {
+    display: inline-block;
+}
+.active .icon-gradient{
+    background: -moz-linear-gradient(90deg, rgba(130,197,91,1) 0%, rgba(0,95,54,1) 100%);;
+    background: -webkit-linear-gradient(90deg, rgba(130,197,91,1) 0%, rgba(0,95,54,1) 100%);;
+    background: linear-gradient(90deg, rgba(130,197,91,1) 0%, rgba(0,95,54,1) 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
