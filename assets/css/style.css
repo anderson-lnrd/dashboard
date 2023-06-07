@@ -1,92 +1,92 @@
 body{
-    margin: 0;
-    font-family: sans-serif;
-    display: flex;
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
 }
 
 aside{
-    background-color: #FAFAFA;
-    width: 25%;
-    height: 100%;
-    color: rgb(60, 60, 60);
-    padding: 20px;
+  background-color: #FAFAFA;
+  width: 25%;
+  height: 100%;
+  color: rgb(60, 60, 60);
+  padding: 20px;
 }
 
 main{
-    padding: 20px;
-    width: 75%;
+  padding: 20px;
+  width: 75%;
 }
 
 
 aside h4 {
-    font-size: 12px;
-    margin-bottom: 8px;
-    font-weight: bolder;
+  font-size: 12px;
+  margin-bottom: 8px;
+  font-weight: bolder;
 }
 
 aside .logo img{
-    width: 50%;
+  width: 50%;
 }
 
 aside ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 aside ul li{
-    padding: 20px 10px;
-    border-radius: 20px;
-    cursor: pointer;
+  padding: 20px 10px;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 aside ul li.active{
-    background-color: #232323;
-    color: white;
+  background-color: #232323;
+  color: white;
 }
 .icon-gradient {
-    display: inline-block;
+  display: inline-block;
 }
 .active .icon-gradient{
-    background: -moz-linear-gradient(90deg, rgba(130,197,91,1) 0%, rgba(0,95,54,1) 100%);;
-    background: -webkit-linear-gradient(90deg, rgba(130,197,91,1) 0%, rgba(0,95,54,1) 100%);;
-    background: linear-gradient(90deg, rgba(130,197,91,1) 0%, rgba(0,95,54,1) 100%);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: -moz-linear-gradient(90deg, rgba(130,197,91,1) 0%, rgba(0,95,54,1) 100%);;
+  background: -webkit-linear-gradient(90deg, rgba(130,197,91,1) 0%, rgba(0,95,54,1) 100%);;
+  background: linear-gradient(90deg, rgba(130,197,91,1) 0%, rgba(0,95,54,1) 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 nav{
-  display: flex;
-  justify-content: space-between;
+display: flex;
+justify-content: space-between;
 }
 
 /* nav div.notification{
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
-  border: 1px solid rgb(60, 60, 60);
-  text-align: center;
-  color: rgb(60, 60, 60);
+border-radius: 50%;
+width: 45px;
+height: 45px;
+border: 1px solid rgb(60, 60, 60);
+text-align: center;
+color: rgb(60, 60, 60);
 }
 
 nav div.notification i{
-  position: relative;
-  top: 12px;
-  font-size: 22px;
+position: relative;
+top: 12px;
+font-size: 22px;
 } */
 
 .search{
-  border: none;
-  outline: none;
-  background: url('../img/lupa.svg') no-repeat scroll 0px 0px;
-  padding-left: 22px;
+border: none;
+outline: none;
+background: url('../img/lupa.svg') no-repeat scroll 0px 0px;
+padding-left: 22px;
 }
 
 .search:focus{
-  border: none;
-  outline: none;
+border: none;
+outline: none;
 }
 
 
@@ -94,116 +94,119 @@ nav div.notification i{
 
 /* Style the list */
 ul.breadcrumb {
-    padding: 10px 16px;
-    list-style: none;
-  }
+  padding: 10px 16px;
+  list-style: none;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 14px;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: ">\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: rgb(60, 60, 60);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.breadcrumb .active{
+  font-weight: bolder;
+  color: rgb(49, 49, 49);
+}
+
+.percent, .update{
+  color: rgba(0,95,54,1);
+  font-weight: bold;
+  display: inline;
+}
+
+.card{
+  padding: 20px;
+  color: rgb(60, 60, 60);
+  background-color: #FAFAFA;
+  border-radius: 20px;
+  margin: 0 5px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.card i {
+  color: rgba(0,95,54,1);
+}
+
+.top-container .card{
+  width: 25%;
+}
+
+.card header{
+  margin-bottom: 20px;
+}
+
+.card footer{
+  margin-top: 20px;
+}
+
+.container{
+  display: flex;
+}
+
+.inner-container{
+  width: 45%;
+  margin: 4px;
+}
+.graph{
+  margin-left: 13%;
+}
+.card button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  bottom: 10px;
+}
+
+.card-container{
+  display: flex;
+}
+
+.card-container div{
+  width: 50%;
+}
+
+.transaction-item{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 36px;
+
+}
+
+.transaction-item h4{
+  margin:0 0 4px 0;
+}
+
+.item-logo{
+  border-radius: 50%;
+  background-color: #CECECE;
+  text-align: center;
+  width: 45px;
+  height: 45px;
   
-  ul.breadcrumb li {
-    display: inline;
-    font-size: 14px;
-  }
-  
-  ul.breadcrumb li+li:before {
-    padding: 8px;
-    color: black;
-    content: ">\00a0";
-  }
-  
-  /* Add a color to all links inside the list */
-  ul.breadcrumb li a {
-    color: rgb(60, 60, 60);
-    text-decoration: none;
-    font-weight: bold;
-  }
+}
 
+.item-logo i{
+  position: relative;
+  top: 14px
+}
 
-  .breadcrumb .active{
-    font-weight: bolder;
-    color: rgb(49, 49, 49);
-  }
-
-  .percent, .update{
-    color: rgba(0,95,54,1);
-    font-weight: bold;
-    display: inline;
-  }
-
-  .card{
-    padding: 20px;
-    color: rgb(60, 60, 60);
-    background-color: #FAFAFA;
-    border-radius: 20px;
-    margin: 0 5px;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .card i {
-    color: rgba(0,95,54,1);
-  }
-
-  .top-container .card{
-    width: 25%;
-  }
-
-  .card header{
-    margin-bottom: 20px;
-  }
-
-  .card footer{
-    margin-top: 20px;
-  }
-
-  .container{
-    display: flex;
-  }
-
-  .inner-container{
-    width: 50%;
-  }
-
-  .card button{
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    bottom: 10px;
-  }
-
-  .card-container{
-    display: flex;
-  }
-
-  .card-container div{
-    width: 50%;
-  }
-
-  .transaction-item{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 36px;
-
-  }
-
-  .transaction-item h4{
-    margin:0 0 4px 0;
-  }
-
-  .item-logo{
-    border-radius: 50%;
-    background-color: #CECECE;
-    text-align: center;
-    width: 45px;
-    height: 45px;
-    
-  }
-
-  .item-logo i{
-    position: relative;
-    top: 14px
-  }
-
-  .item-body{
-    width: 215px;
-  }
+.item-body{
+  width: 215px;
+}
 
