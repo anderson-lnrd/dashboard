@@ -8,7 +8,7 @@ aside{
     background-color: #FAFAFA;
     width: 25%;
     height: 100%;
-    color: rgb(80, 80, 80);
+    color: rgb(60, 60, 60);
     padding: 20px;
 }
 
@@ -17,17 +17,6 @@ main{
     width: 75%;
 }
 
-#search{
-    border: none;
-    outline: none;
-    background: url('../img/lupa.svg') no-repeat scroll 0px 0px;
-    padding-left: 22px;
-}
-
-#search:focus{
-    border: none;
-    outline: none;
-}
 
 aside h4 {
     font-size: 12px;
@@ -68,6 +57,39 @@ aside ul li.active{
     -webkit-text-fill-color: transparent;
 }
 
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* nav div.notification{
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  border: 1px solid rgb(60, 60, 60);
+  text-align: center;
+  color: rgb(60, 60, 60);
+}
+
+nav div.notification i{
+  position: relative;
+  top: 12px;
+  font-size: 22px;
+} */
+
+.search{
+  border: none;
+  outline: none;
+  background: url('../img/lupa.svg') no-repeat scroll 0px 0px;
+  padding-left: 22px;
+}
+
+.search:focus{
+  border: none;
+  outline: none;
+}
+
+
 /* Breadcrumb */
 
 /* Style the list */
@@ -89,7 +111,7 @@ ul.breadcrumb {
   
   /* Add a color to all links inside the list */
   ul.breadcrumb li a {
-    color: rgb(80, 80, 80);
+    color: rgb(60, 60, 60);
     text-decoration: none;
     font-weight: bold;
   }
@@ -108,9 +130,19 @@ ul.breadcrumb {
 
   .card{
     padding: 20px;
+    color: rgb(60, 60, 60);
     background-color: #FAFAFA;
     border-radius: 20px;
     margin: 0 5px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .card i {
+    color: rgba(0,95,54,1);
+  }
+
+  .top-container .card{
     width: 25%;
   }
 
@@ -126,4 +158,52 @@ ul.breadcrumb {
     display: flex;
   }
 
+  .inner-container{
+    width: 50%;
+  }
+
+  .card button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+  }
+
+  .card-container{
+    display: flex;
+  }
+
+  .card-container div{
+    width: 50%;
+  }
+
+  .transaction-item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 36px;
+
+  }
+
+  .transaction-item h4{
+    margin:0 0 4px 0;
+  }
+
+  .item-logo{
+    border-radius: 50%;
+    background-color: #CECECE;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    
+  }
+
+  .item-logo i{
+    position: relative;
+    top: 14px
+  }
+
+  .item-body{
+    width: 215px;
+  }
 

@@ -70,13 +70,20 @@
     </aside>
     <main>
         <header>
-            <input id="search" type="text" placeholder="Type anywhere to search">
+            <nav>
+                <input class="search" type="text" placeholder="Type anywhere to search">
+                <div class="user">
+                    <div class="notification">
+                        <i class="fa-sharp fa-solid fa-bell"></i>
+                    </div>
+                </div>
+            </nav>
             <ul class="breadcrumb">
                 <li><a href="#">Home</a></li>
                 <li><a href="#" class="active">Dashboard</a></li>
             </ul>
         </header>
-        <div class="container">
+        <div class="container top-container">
             <div class="card">
                 <header>
                     <h4>
@@ -101,7 +108,10 @@
                 <h2>$123,000</h2>
                 <footer>
                     <button>
-                        <span class="percent">5%</span> vs last month
+                        <span class="percent">
+                            <i class="fa-solid fa-chart-line"></i>
+                            5%
+                        </span> vs last month
                     </button>
                 </footer>
             </div>
@@ -114,30 +124,160 @@
                 <h2>$123,000</h2>
                 <footer>
                     <button>
-                        <span class="percent">71%</span> see analytics
-                        
+                        <span class="percent">
+                            <i class="fa-solid fa-chart-line"></i>
+                            71%
+                        </span> see analytics
                     </button>
                 </footer>
             </div>
             <div class="card">
                 <header>
                     <h4>
-                        Page visits 
+                        Weekly Sales
                     </h4>
                 </header>
-                <h2>
-                    423
-                </h2>
+                <h2>$123,000</h2>
                 <footer>
                     <button>
-                        see analytics
-                        <i class="fa-solid fa-chevron-right"></i>
+                        <span class="percent">
+                            <i class="fa-solid fa-chart-line"></i>
+                            22%
+                        </span> see analytics
                     </button>
                 </footer>
             </div>
         </div>
         <div class="container">
-            <div class="inner-container"></div>
+            <div class="inner-container">
+                <div class="card">
+                    <header>
+                        <h3>Products</h3>
+                    </header>
+                    <div class="card-container">
+                       <div class="div">
+                        <header>
+                            <h4>
+                                <i class="fa-brands fa-product-hunt"></i>
+                                Product Launched
+                            </h4>
+                        </header>
+                        <h2>433</h2>
+                        <footer>
+                            <span class="percent">
+                                <i class="fa-solid fa-chart-line"></i>
+                                avg. s
+                            </span> product added
+                        </footer>
+                       </div>
+                       <div class="div">
+                        <header>
+                            <h4>
+                                <i class="fa-brands fa-product-hunt"></i>
+                                Product Sold
+                            </h4>
+                        </header>
+                        <h2>223</h2>
+                        <footer>
+                            <span class="percent">
+                                <i class="fa-solid fa-chart-line"></i>
+                                15%
+                            </span> vs last 3 month
+                        </footer>
+                       </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <header>
+                        <h3>Transactions</h3>
+                    </header>
+                    <div class="transaction-item">
+                        <div class="item-logo">
+                            <i class="fa-solid fa-mobile"></i>
+                        </div>
+                        <div class="item-body">
+                            <h4>iPhone 14 Pro Max</h4>
+                            <small>Jul 21th 2022 - 15:31 PM</small>
+                        </div>
+                        <div class="iten-status">
+                            <h4>Completed</h4>
+                            <small>0J2ViVASD7ASNC</small>
+                        </div>
+                    </div>
+
+                    <div class="transaction-item">
+                        <div class="item-logo">
+                            <i class="fa-solid fa-laptop"></i>
+                        </div>
+                        <div class="item-body">
+                            <h4>MacBook Pro M1 13"</h4>
+                            <small>Jul 20th 2022 - 15:31 PM</small>
+                        </div>
+                        <div class="iten-status">
+                            <h4>Pending</h4>
+                            <small>0J2ViVASD7ASNC</small>
+                        </div>
+                    </div>
+
+                    <div class="transaction-item">
+                        <div class="item-logo">
+                            <i class="fa-sharp fa-solid fa-box"></i>
+                        </div>
+                        <div class="item-body">
+                            <h4>Roughneck Sweather</h4>
+                            <small>Jul 19th 2022 - 15:31 PM</small>
+                        </div>
+                        <div class="iten-status">
+                            <h4>Pending</h4>
+                            <small>0J2ViVASD7ASNC</small>
+                        </div>
+                    </div>
+
+                    <div class="transaction-item">
+                        <div class="item-logo">
+                            <i class="fa-sharp fa-solid fa-box"></i>
+                        </div>
+                        <div class="item-body">
+                            <h4>Eren Jaeger T-Shirt</h4>
+                            <small>Jul 18th 2022 - 15:31 PM</small>
+                        </div>
+                        <div class="iten-status">
+                            <h4>Completed</h4>
+                            <small>0J2ViVASD7ASNC</small>
+                        </div>
+                    </div>
+
+                    <div class="transaction-item">
+                        <div class="item-logo">
+                            <i class="fa-solid fa-mobile"></i>
+                        </div>
+                        <div class="item-body">
+                            <h4>iPhone 7 Plus RED Edition</h4>
+                            <small>Jul 15th 2022 - 15:31 PM</small>
+                        </div>
+                        <div class="iten-status">
+                            <h4>Pending</h4>
+                            <small>0J2ViVASD7ASNC</small>
+                        </div>
+                    </div>
+
+                    <div class="transaction-item">
+                        <div class="item-logo">
+                            <i class="fa-solid fa-mobile"></i>
+                        </div>
+                        <div class="item-body">
+                            <h4>iPhone 14 Pro Max RED PDI</h4>
+                            <small>Jul 12th 2022 - 15:31 PM</small>
+                        </div>
+                        <div class="iten-status">
+                            <h4>Pending</h4>
+                            <small>0J2ViVASD7ASNC</small>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
             <div class="inner-container"></div>
         </div>
     </main>
